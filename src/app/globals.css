@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.hero-foto {
+  background-image: url('/gambarsekolah.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.judul-foto {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url('/gambarsekolah.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
