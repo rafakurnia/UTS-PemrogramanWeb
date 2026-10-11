@@ -42,16 +42,6 @@ export default function KontakPage() {
 
           {/* ── Kartu Informasi Kontak ──────────────────────── */}
           <div className="rounded-2xl border border-gray-200 bg-white p-6 flex gap-6 items-start shadow-sm">
-
-            {/* Logo */}
-            <div className="shrink-0">
-              <img
-                src="/logokontak-sman9.png"
-                alt="Logo SMAN 9 Semarang"
-                className="h-24 w-24 object-contain"
-              />
-            </div>
-
             {/* Info */}
             <div className="space-y-5">
 
