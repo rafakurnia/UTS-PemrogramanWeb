@@ -13,10 +13,10 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3">
             {/* TODO: ganti dengan logo asli sekolah */}
             <div className="">
-              <img src="/logo.png" alt="Logo SMAN 9 Semarang" className="h-10 w-auto object-contain" />
+              <img src="/logokontak-sman9.png" alt="Logo SMAN 9 Semarang" className="h-15 w-auto object-contain" />
             </div>
             <span className="font-bold text-lg text-gray-800">
-              SMAN 9 Semarang
+             
             </span>
           </Link>
 
@@ -30,6 +30,9 @@ export default function Navbar() {
             </Link>
             <Link href="/berita" className="text-gray-600 hover:text-green-600 hover:underline underline-offset-4 transition-colors">
               Berita
+            </Link>
+            <Link href="/kontak" className="text-gray-600 hover:text-green-600 hover:underline underline-offset-4 transition-colors">
+              Kontak
             </Link>
           </div>
 
@@ -72,6 +75,13 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
             >
               Berita
+            </Link>
+            <Link
+              href="/kontak"
+              className="block px-3 py-2 rounded text-gray-600 hover:bg-gray-100 hover:text-green-600 hover:underline underline-offset-4 transition-colors"
+              onClick={() => setMenuOpen(false)}
+            >
+              Kontak
             </Link>
           </div>
         )}

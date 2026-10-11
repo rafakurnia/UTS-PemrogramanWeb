@@ -24,6 +24,8 @@ const angka = [
   { nilai: "12", label: "Kantin siswa" },
 ];
 
+import Image from "next/image";
+
 const misi = [
   {
     judul: "Kebersihan, keindahan, dan penghijauan",
@@ -128,8 +130,7 @@ export default function AboutPage() {
         {/* ===================================================
             PROFIL SEKOLAH
         ==================================================== */}
-        <section className="mb-20">
-
+        <section className="relative isolate overflow-hidden mb-20">
           <div className="mb-6">
             <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-[#0a2e1c]">
               Tentang Kami
