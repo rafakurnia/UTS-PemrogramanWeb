@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Hero from "@/components/Hero";
-import BeritaCard from "@/components/BeritaCard";
+import BeritaTerbaruClient from "@/components/BeritaTerbaruClient";
 import { berita } from "@/data/berita";
+
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   const beritaTerbaru = berita.slice(0, 3);
@@ -131,11 +133,7 @@ export default function Home() {
               Semua Berita &rarr;
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {beritaTerbaru.map((item) => (
-              <BeritaCard key={item.id} berita={item} />
-            ))}
-          </div>
+          <BeritaTerbaruClient initialList={berita} />
         </div>
       </section>
     </>
